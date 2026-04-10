@@ -1,594 +1,594 @@
 {
-"project_name": "Code-Crawler-Genome",
-"root_path": "",
-"nodes": {
-"02b2e9b0-67fa-4255-8669-5af089492405": {
-"uuid": "02b2e9b0-67fa-4255-8669-5af089492405",
-"public_id": "main.modifyDamageByArmor[damage.go]",
-"fingerprint": "",
-"logic_hash": "11b84d1111f60f2f7c5a443cc6ff320f6a5c5d36def2e572a2b0937d54ebc66b",
-"node_type": "function",
-"file_path": "damage.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This function simulates the defensive properties of different armor types against incoming damage, adjusting the final damage value based on both the armor and damage types. It establishes a core combat mechanic by defining how armor contributes to a defender's resilience, influencing battle outcomes and tactical decisions within the system.",
-"last_modified": "2026-04-10T12:09:22.475016981Z",
-"version": 1
-},
-"03195f1f-32e2-48c6-a67e-9d42c3a8d5dc": {
-"uuid": "03195f1f-32e2-48c6-a67e-9d42c3a8d5dc",
-"public_id": "main.Fighter[types.go]",
-"fingerprint": "",
-"logic_hash": "5c1cbe2a0c2049f50a46bacf03b10539439ffce02baaf18ae66bd63694d1f273",
-"node_type": "struct",
-"file_path": "types.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This struct defines the core data model for any combatant or character entity within the system. It encapsulates all essential attributes, current state, and statistics required to manage and simulate their behavior and interactions.",
-"last_modified": "2026-04-10T12:09:22.47729609Z",
-"version": 1
-},
-"0577ed29-a685-4f12-8ff4-397aefa84068": {
-"uuid": "0577ed29-a685-4f12-8ff4-397aefa84068",
-"public_id": "main.ApplyStatusEffect[effects.go]",
-"fingerprint": "",
-"logic_hash": "49803c618d4d2613a089d54e5e23d6f445884ee2558fca6362555740e4299055",
-"node_type": "function",
-"file_path": "effects.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This function manages the application or refresh of temporary conditions on a fighter, such as buffs or debuffs, within the game system. It ensures the system accurately tracks which effects are active on a fighter and for how many turns, influencing gameplay state.",
-"last_modified": "2026-04-10T12:09:22.475065703Z",
-"version": 1
-},
-"09876d1a-d417-40b5-b95d-7b5a9519bdcb": {
-"uuid": "09876d1a-d417-40b5-b95d-7b5a9519bdcb",
-"public_id": "main.CalculateDamage[damage.go]",
-"fingerprint": "",
-"logic_hash": "3046a00808e4682fdcf137f5fcf3b265268b22c171cdb75544b9fde0256ef396",
-"node_type": "function",
-"file_path": "damage.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This function serves as the core combat resolution engine, calculating the final damage an attacker inflicts on a defender during an interaction. It integrates various combat factors like power, elemental advantages, and defensive stats to provide a conclusive damage value, essential for accurate game state progression and combat outcome determination.",
-"last_modified": "2026-04-10T12:09:22.474597283Z",
-"version": 1
-},
-"09d10bb1-00d9-4c68-b917-b89e1e6df217": {
-"uuid": "09d10bb1-00d9-4c68-b917-b89e1e6df217",
-"public_id": "main.Slash[moves.go]",
-"fingerprint": "",
-"logic_hash": "ab30e3c310686a14652454c558c1c7b56709ffd0a9f4e56333d08d75cc1cad6c",
-"node_type": "struct",
-"file_path": "moves.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This code defines the core combat abilities and their specific attributes available within the game system. It provides a foundational catalog of actions that characters can perform, enabling consistent combat mechanics and character customization.",
-"last_modified": "2026-04-10T12:09:22.47633724Z",
-"version": 1
-},
-"1a417bd6-e579-4512-b48e-98881a682f9b": {
-"uuid": "1a417bd6-e579-4512-b48e-98881a682f9b",
-"public_id": "main.modifyDamageByElement[damage.go]",
-"fingerprint": "",
-"logic_hash": "34eed43ca7ec6c3fe397ce5dfb9f5a2d0c039f80098e2c5b02f7e57c25a11fbe",
-"node_type": "function",
-"file_path": "damage.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This function dynamically adjusts damage calculations based on specific elemental attacks interacting with a defender's status effects, simulating tactical combat advantages. It introduces a layer of strategic depth to the combat system by allowing certain elemental attacks to deal bonus damage against opponents with particular afflictions.",
-"last_modified": "2026-04-10T12:09:22.474884156Z",
-"version": 1
-},
-"1a6ab921-a5eb-4e29-bbde-2a46ed04468b": {
-"uuid": "1a6ab921-a5eb-4e29-bbde-2a46ed04468b",
-"public_id": "main.IceLance[moves.go]",
-"fingerprint": "",
-"logic_hash": "ab30e3c310686a14652454c558c1c7b56709ffd0a9f4e56333d08d75cc1cad6c",
-"node_type": "struct",
-"file_path": "moves.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This code block defines a standard catalog of combat moves available within the system, detailing their unique properties such as power, element, damage type, and associated status effects. It serves to consistently initialize and manage the fundamental actions and their impact during battle simulations or character interactions.",
-"last_modified": "2026-04-10T12:09:22.476666021Z",
-"version": 1
-},
-"21a27fdd-36d0-431f-8e37-738593720aca": {
-"uuid": "21a27fdd-36d0-431f-8e37-738593720aca",
-"public_id": "main.hasStatus[effects.go]",
-"fingerprint": "",
-"logic_hash": "371a8ef9f10d93641fc47aa06ee891583332306bf1af6f89778999baa18b6e93",
-"node_type": "function",
-"file_path": "effects.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This function exists to quickly ascertain if a combatant is currently afflicted by a particular status effect within the game system. It provides critical information for game logic, allowing the system to apply or negate actions based on a fighter's current condition.",
-"last_modified": "2026-04-10T12:09:22.475284994Z",
-"version": 1
-},
-"47c1f5cf-ec59-40a9-a2ae-ec6f17046551": {
-"uuid": "47c1f5cf-ec59-40a9-a2ae-ec6f17046551",
-"public_id": "main.IsDefeated[rules.go]",
-"fingerprint": "",
-"logic_hash": "be30be62af1f3423831bb4b9393df3c83b3076347f63636f0abd14d18122b0c4",
-"node_type": "function",
-"file_path": "rules.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This function exists to provide a standardized mechanism for the game system to determine if a fighter character has been incapacitated or defeated. It is crucial for accurately assessing combat outcomes, triggering game state transitions, and ensuring the game progresses logically based on character health.",
-"last_modified": "2026-04-10T12:09:22.476866875Z",
-"version": 1
-},
-"505f13ee-4bea-4002-a0a9-9dc5a77dbfbe": {
-"uuid": "505f13ee-4bea-4002-a0a9-9dc5a77dbfbe",
-"public_id": "main.applyCriticalHit[damage.go]",
-"fingerprint": "",
-"logic_hash": "15ef8c74afad9ceb84abd58bc6c6edf169e212e0245b8390bc299ee165c5d780",
-"node_type": "function",
-"file_path": "damage.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This function determines if an attacker lands a critical hit, increasing their base damage by 50% if their critical hit chance stat meets a threshold. It exists to implement a core combat mechanic that adds variability and excitement to damage calculation within the game system.",
-"last_modified": "2026-04-10T12:09:22.474776728Z",
-"version": 1
-},
-"53f50108-05cd-48df-b2eb-7db1e3f22cf1": {
-"uuid": "53f50108-05cd-48df-b2eb-7db1e3f22cf1",
-"public_id": "main.Stats[types.go]",
-"fingerprint": "",
-"logic_hash": "d4dc8fd136bb228913e3c81c170e045f196fcf77d3b3176817d23324ef9d18cf",
-"node_type": "struct",
-"file_path": "types.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This struct defines the core numerical attributes that quantify a character's or entity's capabilities within the system. It provides a standardized data model for storing and managing the performance metrics essential for gameplay mechanics like combat calculations or ability checks.",
-"last_modified": "2026-04-10T12:09:22.477226634Z",
-"version": 1
-},
-"681269b1-cc13-4461-b776-829c60c7baa1": {
-"uuid": "681269b1-cc13-4461-b776-829c60c7baa1",
-"public_id": "main.ApplyHealing[healing.go]",
-"fingerprint": "",
-"logic_hash": "1d5d342ac643df8a4a7755ae577b8c90334a1ec7f1614ba433d04f1c52d79d84",
-"node_type": "function",
-"file_path": "healing.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This function exists to apply a specified amount of healing to a fighter, increasing their current hit points. It ensures that a fighter's health is restored correctly within their maximum limit, providing a core mechanic for health management in a combat simulation system.",
-"last_modified": "2026-04-10T12:09:22.475370353Z",
-"version": 1
-},
-"6f7e1351-a3a8-4b4a-9147-223e6fa0a1fd": {
-"uuid": "6f7e1351-a3a8-4b4a-9147-223e6fa0a1fd",
-"public_id": "main.main[main.go]",
-"fingerprint": "",
-"logic_hash": "aa20507cd40f58191f911a56e280513b18ca0b6b4eb1081d29fe49e9410b0704",
-"node_type": "function",
-"file_path": "main.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This function exists to demonstrate a basic combat simulation within a game context, setting up two fighters and resolving a turn. It showcases core mechanics like character creation, applying status effects, resolving combat actions, and using items, providing a tangible example of the system's operational flow.",
-"last_modified": "2026-04-10T12:09:22.475619876Z",
-"version": 1
-},
-"7bc9bfe7-a249-47c0-b25f-0c6bcfa4495d": {
-"uuid": "7bc9bfe7-a249-47c0-b25f-0c6bcfa4495d",
-"public_id": "main.ShieldBash[moves.go]",
-"fingerprint": "",
-"logic_hash": "ab30e3c310686a14652454c558c1c7b56709ffd0a9f4e56333d08d75cc1cad6c",
-"node_type": "struct",
-"file_path": "moves.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This declaration defines the \"Shield Bash\" ability, detailing its attributes like power, damage type, and the stun effect it applies. It provides the system with a concrete, pre-configured combat option that characters can use to strategically damage and incapacitate opponents.",
-"last_modified": "2026-04-10T12:09:22.476821776Z",
-"version": 1
-},
-"7e706a36-66bf-48cc-8c4d-036a8dee7ef3": {
-"uuid": "7e706a36-66bf-48cc-8c4d-036a8dee7ef3",
-"public_id": "main.TestFireDamageAgainstFrozenEnemyGetsBonus[main_test.go]",
-"fingerprint": "",
-"logic_hash": "e4e20527fcc97a362690bce5d975a18ac3d722aa98eb20f806ad6d044e2a8769",
-"node_type": "function",
-"file_path": "main_test.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This test function validates a specific combat rule: that fire damage correctly receives a bonus when applied to a frozen enemy. It ensures the game's elemental interaction mechanics are functioning as intended, confirming proper damage calculation and strategic depth.",
-"last_modified": "2026-04-10T12:09:22.475765241Z",
-"version": 1
-},
-"96f6fc25-80d7-4750-a27d-6c60f6387ecc": {
-"uuid": "96f6fc25-80d7-4750-a27d-6c60f6387ecc",
-"public_id": "main.NewFighter[types.go]",
-"fingerprint": "",
-"logic_hash": "9eb823e1dfbcb37e69131df9ff04198301757eb69181226fb3a62e853f94b424",
-"node_type": "function",
-"file_path": "types.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This function serves to instantiate and properly configure new fighter entities within the system. It ensures that all essential characteristics of a fighter, such as name, class, health, and gear, are consistently set upon creation, enabling their integration into game logic or simulations.",
-"last_modified": "2026-04-10T12:09:22.477488207Z",
-"version": 1
-},
-"a8def501-894d-4661-bfd7-54e235b4cb8e": {
-"uuid": "a8def501-894d-4661-bfd7-54e235b4cb8e",
-"public_id": "main.UseHealingPotion[healing.go]",
-"fingerprint": "",
-"logic_hash": "922cb7576b0e893522e9741085e5375221c8f46b68880caec8219020a2920c79",
-"node_type": "function",
-"file_path": "healing.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This function simulates the in-game action of a fighter consuming a healing potion, applying a fixed amount of healing to their health. It provides a core game mechanic for health restoration and generates appropriate user-facing messages based on the healing outcome.",
-"last_modified": "2026-04-10T12:09:22.475446722Z",
-"version": 1
-},
-"a9931839-9487-4e2a-95d8-65dbee56857e": {
-"uuid": "a9931839-9487-4e2a-95d8-65dbee56857e",
-"public_id": "main.TickStatusEffects[effects.go]",
-"fingerprint": "",
-"logic_hash": "1495ed1b8b4bd8243e35db04b5ddf0afd9084730ae41262bf6e3985ce1d54473",
-"node_type": "function",
-"file_path": "effects.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This function processes a character's active status effects at the end of a game turn, applying periodic effects like damage or healing. It also decrements the duration of all statuses, automatically removing those that have expired.",
-"last_modified": "2026-04-10T12:09:22.475247295Z",
-"version": 1
-},
-"b1d3a99e-f953-4b10-819f-eae338ff621a": {
-"uuid": "b1d3a99e-f953-4b10-819f-eae338ff621a",
-"public_id": "main.TestStunnedTargetCannotAct[main_test.go]",
-"fingerprint": "",
-"logic_hash": "e50a3015a6e40536218f5e4bb8c83c7a1f410cb2bcde3e10f2f4a6960a6dfcb5",
-"node_type": "function",
-"file_path": "main_test.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This test function verifies a critical game mechanic, ensuring that characters afflicted with a \"stunned\" status effect are correctly prevented from taking actions. It validates the integrity of the game's status effect system, which is crucial for fair gameplay and predictable combat logic.",
-"last_modified": "2026-04-10T12:09:22.475933999Z",
-"version": 1
-},
-"b42bd590-1bc1-4b74-8db2-9920af60012e": {
-"uuid": "b42bd590-1bc1-4b74-8db2-9920af60012e",
-"public_id": "main.TurnResult[moves.go]",
-"fingerprint": "",
-"logic_hash": "c065da6ae558edb9da591bf8f1e6838eafd7e260b82233d59f514ec2e1d7a9f4",
-"node_type": "struct",
-"file_path": "moves.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This structure standardizes the complete outcome of a single actor's action or a turn within a simulation or game, bundling all relevant details like actor, target, move, damage, and any resulting messages. It provides a clear, machine-readable record of events, enabling consistent system state updates, user interface feedback, and logging for analysis or playback of system interactions.",
-"last_modified": "2026-04-10T12:09:22.476080153Z",
-"version": 1
-},
-"bdf64dbe-b71c-4b42-b4ab-5504325c8463": {
-"uuid": "bdf64dbe-b71c-4b42-b4ab-5504325c8463",
-"public_id": "main.CanAct[rules.go]",
-"fingerprint": "",
-"logic_hash": "825a36e573b00b22ab6ee499ff0ab7cc9ac8f3cf8ddb232b024fa4fc1d75ca07",
-"node_type": "function",
-"file_path": "rules.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This function exists to determine if a combatant is currently able to perform an action within the game system. It provides value by ensuring only active, unhindered fighters participate in combat turns, upholding game rules and maintaining state integrity.",
-"last_modified": "2026-04-10T12:09:22.476909161Z",
-"version": 1
-},
-"c50b15f2-b53d-4c67-a3f1-37bc5ae103e4": {
-"uuid": "c50b15f2-b53d-4c67-a3f1-37bc5ae103e4",
-"public_id": "main.Fireball[moves.go]",
-"fingerprint": "",
-"logic_hash": "ab30e3c310686a14652454c558c1c7b56709ffd0a9f4e56333d08d75cc1cad6c",
-"node_type": "struct",
-"file_path": "moves.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This code defines a specific combat action, \"Fireball,\" along with other moves, giving it unique attributes like power, element, damage type, and an associated effect. It provides a foundational, reusable definition for a distinct offensive capability within the game's combat system, allowing characters to perform specific magical fire attacks with a burning effect.",
-"last_modified": "2026-04-10T12:09:22.4765086Z",
-"version": 1
-},
-"c9b19c1b-de37-4c3f-b9e4-81b131e9e5b7": {
-"uuid": "c9b19c1b-de37-4c3f-b9e4-81b131e9e5b7",
-"public_id": "main.TestHealingPotionRestoresHealth[main_test.go]",
-"fingerprint": "",
-"logic_hash": "f4e331b1b721eb6c921c2140c5b003687867a69986d3ed5e43b65a76b6c8d951",
-"node_type": "function",
-"file_path": "main_test.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This test function ensures that the \"Healing Potion\" game item correctly increases a character's health. It validates a critical gameplay mechanic, guaranteeing that health restoration items function reliably within the game system.",
-"last_modified": "2026-04-10T12:09:22.475851429Z",
-"version": 1
-},
-"cdd7eceb-8350-43a7-a967-99f3d59dd6f5": {
-"uuid": "cdd7eceb-8350-43a7-a967-99f3d59dd6f5",
-"public_id": "main.clamp[util.go]",
-"fingerprint": "",
-"logic_hash": "bf245f8e2c1962ee44dff4bca6671d0a838daa070fef910ff5335c7962ee6005",
-"node_type": "function",
-"file_path": "util.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This function exists to constrain an integer value within specified minimum and maximum bounds, preventing it from exceeding acceptable limits. It ensures data integrity and prevents out-of-range errors in system operations by normalizing input or calculated values to a valid range.",
-"last_modified": "2026-04-10T12:09:22.477544359Z",
-"version": 1
-},
-"d3e03079-9540-4083-bea2-4b3f8bb06580": {
-"uuid": "d3e03079-9540-4083-bea2-4b3f8bb06580",
-"public_id": "main.itoa[util.go]",
-"fingerprint": "",
-"logic_hash": "365b170a010d20b653b88ef9feb469ec4cccec32932b0f8296283b8f96fb9f93",
-"node_type": "function",
-"file_path": "util.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This function provides a standardized and centralized utility for converting integer values into their string representation within the Code Crawler system. It ensures consistency across the codebase for this common operation and offers a single point of modification should the underlying conversion logic ever need to change.",
-"last_modified": "2026-04-10T12:09:22.477573159Z",
-"version": 1
-},
-"d5418078-65cb-4f37-93a8-51755f79511c": {
-"uuid": "d5418078-65cb-4f37-93a8-51755f79511c",
-"public_id": "main.Move[moves.go]",
-"fingerprint": "",
-"logic_hash": "82e9570d88839c11ad3bcb9842b06deed4296fe723e0bcf7ed79d29b6d39e1a1",
-"node_type": "struct",
-"file_path": "moves.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This struct defines the core properties and capabilities of an individual combat action or ability within the system, detailing its name, power, type, and any special effects. It provides a foundational data model for consistently representing and applying diverse moves in gameplay or simulation, enabling robust and predictable combat mechanics.",
-"last_modified": "2026-04-10T12:09:22.476005284Z",
-"version": 1
-},
-"d89f0bba-0f49-4ccb-9090-33f981c0f113": {
-"uuid": "d89f0bba-0f49-4ccb-9090-33f981c0f113",
-"public_id": "main.ResolveTurn[turn.go]",
-"fingerprint": "",
-"logic_hash": "da4ce50184200855fc6c95fd2165478e24394cd4c14bfb683dcf9142f6e989da",
-"node_type": "function",
-"file_path": "turn.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This function orchestrates a single combat turn between two fighters, applying the chosen move's effects, calculating damage, and managing status changes. It provides a structured outcome of the turn, enabling the game system to progress combat and track the state of participants.",
-"last_modified": "2026-04-10T12:09:22.477186524Z",
-"version": 1
-},
-"eb53676c-5a68-4a5f-b473-170d7719913c": {
-"uuid": "eb53676c-5a68-4a5f-b473-170d7719913c",
-"public_id": "main.applyWeaponStyleBonus[damage.go]",
-"fingerprint": "",
-"logic_hash": "634ee69ce069ba786c475296f8e437bd63963f1e6fd634c2ee859570a3fa2adb",
-"node_type": "function",
-"file_path": "damage.go",
-"dependencies": {
-"calls": null,
-"reads": null,
-"writes": null
-},
-"test_health": {
-"has_test": false,
-"last_passed": false,
-"tested_at": ""
-},
-"business_purpose": "This function exists to modify the base damage value by applying a specific bonus determined by the attacking fighter's weapon type. It provides value by implementing a core game mechanic that diversifies combat, making weapon choices strategically significant and enhancing the depth of damage calculations.",
-"last_modified": "2026-04-10T12:09:22.474718146Z",
-"version": 1
-}
-}
+  "project_name": "Code-Crawler-Genome",
+  "root_path": "",
+  "nodes": {
+    "02b2e9b0-67fa-4255-8669-5af089492405": {
+      "uuid": "02b2e9b0-67fa-4255-8669-5af089492405",
+      "public_id": "main.modifyDamageByArmor[damage.go]",
+      "fingerprint": "",
+      "logic_hash": "11b84d1111f60f2f7c5a443cc6ff320f6a5c5d36def2e572a2b0937d54ebc66b",
+      "node_type": "function",
+      "file_path": "damage.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This function simulates the defensive properties of different armor types against incoming damage, adjusting the final damage value based on both the armor and damage types. It establishes a core combat mechanic by defining how armor contributes to a defender's resilience, influencing battle outcomes and tactical decisions within the system.",
+      "last_modified": "2026-04-10T12:09:22.475016981Z",
+      "version": 1
+    },
+    "03195f1f-32e2-48c6-a67e-9d42c3a8d5dc": {
+      "uuid": "03195f1f-32e2-48c6-a67e-9d42c3a8d5dc",
+      "public_id": "main.Fighter[types.go]",
+      "fingerprint": "",
+      "logic_hash": "5c1cbe2a0c2049f50a46bacf03b10539439ffce02baaf18ae66bd63694d1f273",
+      "node_type": "struct",
+      "file_path": "types.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This struct defines the core data model for any combatant or character entity within the system. It encapsulates all essential attributes, current state, and statistics required to manage and simulate their behavior and interactions.",
+      "last_modified": "2026-04-10T12:09:22.47729609Z",
+      "version": 1
+    },
+    "0577ed29-a685-4f12-8ff4-397aefa84068": {
+      "uuid": "0577ed29-a685-4f12-8ff4-397aefa84068",
+      "public_id": "main.ApplyStatusEffect[effects.go]",
+      "fingerprint": "",
+      "logic_hash": "49803c618d4d2613a089d54e5e23d6f445884ee2558fca6362555740e4299055",
+      "node_type": "function",
+      "file_path": "effects.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This function manages the application or refresh of temporary conditions on a fighter, such as buffs or debuffs, within the game system. It ensures the system accurately tracks which effects are active on a fighter and for how many turns, influencing gameplay state.",
+      "last_modified": "2026-04-10T12:09:22.475065703Z",
+      "version": 1
+    },
+    "09876d1a-d417-40b5-b95d-7b5a9519bdcb": {
+      "uuid": "09876d1a-d417-40b5-b95d-7b5a9519bdcb",
+      "public_id": "main.CalculateDamage[damage.go]",
+      "fingerprint": "",
+      "logic_hash": "3046a00808e4682fdcf137f5fcf3b265268b22c171cdb75544b9fde0256ef396",
+      "node_type": "function",
+      "file_path": "damage.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This function serves as the core combat resolution engine, calculating the final damage an attacker inflicts on a defender during an interaction. It integrates various combat factors like power, elemental advantages, and defensive stats to provide a conclusive damage value, essential for accurate game state progression and combat outcome determination.",
+      "last_modified": "2026-04-10T12:09:22.474597283Z",
+      "version": 1
+    },
+    "09d10bb1-00d9-4c68-b917-b89e1e6df217": {
+      "uuid": "09d10bb1-00d9-4c68-b917-b89e1e6df217",
+      "public_id": "main.Slash[moves.go]",
+      "fingerprint": "",
+      "logic_hash": "ab30e3c310686a14652454c558c1c7b56709ffd0a9f4e56333d08d75cc1cad6c",
+      "node_type": "struct",
+      "file_path": "moves.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This code defines the core combat abilities and their specific attributes available within the game system. It provides a foundational catalog of actions that characters can perform, enabling consistent combat mechanics and character customization.",
+      "last_modified": "2026-04-10T12:09:22.47633724Z",
+      "version": 1
+    },
+    "1a417bd6-e579-4512-b48e-98881a682f9b": {
+      "uuid": "1a417bd6-e579-4512-b48e-98881a682f9b",
+      "public_id": "main.modifyDamageByElement[damage.go]",
+      "fingerprint": "",
+      "logic_hash": "34eed43ca7ec6c3fe397ce5dfb9f5a2d0c039f80098e2c5b02f7e57c25a11fbe",
+      "node_type": "function",
+      "file_path": "damage.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This function dynamically adjusts damage calculations based on specific elemental attacks interacting with a defender's status effects, simulating tactical combat advantages. It introduces a layer of strategic depth to the combat system by allowing certain elemental attacks to deal bonus damage against opponents with particular afflictions.",
+      "last_modified": "2026-04-10T12:09:22.474884156Z",
+      "version": 1
+    },
+    "1a6ab921-a5eb-4e29-bbde-2a46ed04468b": {
+      "uuid": "1a6ab921-a5eb-4e29-bbde-2a46ed04468b",
+      "public_id": "main.IceLance[moves.go]",
+      "fingerprint": "",
+      "logic_hash": "ab30e3c310686a14652454c558c1c7b56709ffd0a9f4e56333d08d75cc1cad6c",
+      "node_type": "struct",
+      "file_path": "moves.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This code block defines a standard catalog of combat moves available within the system, detailing their unique properties such as power, element, damage type, and associated status effects. It serves to consistently initialize and manage the fundamental actions and their impact during battle simulations or character interactions.",
+      "last_modified": "2026-04-10T12:09:22.476666021Z",
+      "version": 1
+    },
+    "21a27fdd-36d0-431f-8e37-738593720aca": {
+      "uuid": "21a27fdd-36d0-431f-8e37-738593720aca",
+      "public_id": "main.hasStatus[effects.go]",
+      "fingerprint": "",
+      "logic_hash": "371a8ef9f10d93641fc47aa06ee891583332306bf1af6f89778999baa18b6e93",
+      "node_type": "function",
+      "file_path": "effects.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This function exists to quickly ascertain if a combatant is currently afflicted by a particular status effect within the game system. It provides critical information for game logic, allowing the system to apply or negate actions based on a fighter's current condition.",
+      "last_modified": "2026-04-10T12:09:22.475284994Z",
+      "version": 1
+    },
+    "47c1f5cf-ec59-40a9-a2ae-ec6f17046551": {
+      "uuid": "47c1f5cf-ec59-40a9-a2ae-ec6f17046551",
+      "public_id": "main.IsDefeated[rules.go]",
+      "fingerprint": "",
+      "logic_hash": "be30be62af1f3423831bb4b9393df3c83b3076347f63636f0abd14d18122b0c4",
+      "node_type": "function",
+      "file_path": "rules.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This function exists to provide a standardized mechanism for the game system to determine if a fighter character has been incapacitated or defeated. It is crucial for accurately assessing combat outcomes, triggering game state transitions, and ensuring the game progresses logically based on character health.",
+      "last_modified": "2026-04-10T12:09:22.476866875Z",
+      "version": 1
+    },
+    "505f13ee-4bea-4002-a0a9-9dc5a77dbfbe": {
+      "uuid": "505f13ee-4bea-4002-a0a9-9dc5a77dbfbe",
+      "public_id": "main.applyCriticalHit[damage.go]",
+      "fingerprint": "",
+      "logic_hash": "15ef8c74afad9ceb84abd58bc6c6edf169e212e0245b8390bc299ee165c5d780",
+      "node_type": "function",
+      "file_path": "damage.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This function determines if an attacker lands a critical hit, increasing their base damage by 50% if their critical hit chance stat meets a threshold. It exists to implement a core combat mechanic that adds variability and excitement to damage calculation within the game system.",
+      "last_modified": "2026-04-10T12:09:22.474776728Z",
+      "version": 1
+    },
+    "53f50108-05cd-48df-b2eb-7db1e3f22cf1": {
+      "uuid": "53f50108-05cd-48df-b2eb-7db1e3f22cf1",
+      "public_id": "main.Stats[types.go]",
+      "fingerprint": "",
+      "logic_hash": "d4dc8fd136bb228913e3c81c170e045f196fcf77d3b3176817d23324ef9d18cf",
+      "node_type": "struct",
+      "file_path": "types.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This struct defines the core numerical attributes that quantify a character's or entity's capabilities within the system. It provides a standardized data model for storing and managing the performance metrics essential for gameplay mechanics like combat calculations or ability checks.",
+      "last_modified": "2026-04-10T12:09:22.477226634Z",
+      "version": 1
+    },
+    "681269b1-cc13-4461-b776-829c60c7baa1": {
+      "uuid": "681269b1-cc13-4461-b776-829c60c7baa1",
+      "public_id": "main.ApplyHealing[healing.go]",
+      "fingerprint": "",
+      "logic_hash": "1d5d342ac643df8a4a7755ae577b8c90334a1ec7f1614ba433d04f1c52d79d84",
+      "node_type": "function",
+      "file_path": "healing.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This function exists to apply a specified amount of healing to a fighter, increasing their current hit points. It ensures that a fighter's health is restored correctly within their maximum limit, providing a core mechanic for health management in a combat simulation system.",
+      "last_modified": "2026-04-10T12:09:22.475370353Z",
+      "version": 1
+    },
+    "6f7e1351-a3a8-4b4a-9147-223e6fa0a1fd": {
+      "uuid": "6f7e1351-a3a8-4b4a-9147-223e6fa0a1fd",
+      "public_id": "main.main[main.go]",
+      "fingerprint": "",
+      "logic_hash": "aa20507cd40f58191f911a56e280513b18ca0b6b4eb1081d29fe49e9410b0704",
+      "node_type": "function",
+      "file_path": "main.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This function exists to demonstrate a basic combat simulation within a game context, setting up two fighters and resolving a turn. It showcases core mechanics like character creation, applying status effects, resolving combat actions, and using items, providing a tangible example of the system's operational flow.",
+      "last_modified": "2026-04-10T12:09:22.475619876Z",
+      "version": 1
+    },
+    "7bc9bfe7-a249-47c0-b25f-0c6bcfa4495d": {
+      "uuid": "7bc9bfe7-a249-47c0-b25f-0c6bcfa4495d",
+      "public_id": "main.ShieldBash[moves.go]",
+      "fingerprint": "",
+      "logic_hash": "ab30e3c310686a14652454c558c1c7b56709ffd0a9f4e56333d08d75cc1cad6c",
+      "node_type": "struct",
+      "file_path": "moves.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This declaration defines the \"Shield Bash\" ability, detailing its attributes like power, damage type, and the stun effect it applies. It provides the system with a concrete, pre-configured combat option that characters can use to strategically damage and incapacitate opponents.",
+      "last_modified": "2026-04-10T12:09:22.476821776Z",
+      "version": 1
+    },
+    "7e706a36-66bf-48cc-8c4d-036a8dee7ef3": {
+      "uuid": "7e706a36-66bf-48cc-8c4d-036a8dee7ef3",
+      "public_id": "main.TestFireDamageAgainstFrozenEnemyGetsBonus[main_test.go]",
+      "fingerprint": "",
+      "logic_hash": "e4e20527fcc97a362690bce5d975a18ac3d722aa98eb20f806ad6d044e2a8769",
+      "node_type": "function",
+      "file_path": "main_test.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This test function validates a specific combat rule: that fire damage correctly receives a bonus when applied to a frozen enemy. It ensures the game's elemental interaction mechanics are functioning as intended, confirming proper damage calculation and strategic depth.",
+      "last_modified": "2026-04-10T12:09:22.475765241Z",
+      "version": 1
+    },
+    "96f6fc25-80d7-4750-a27d-6c60f6387ecc": {
+      "uuid": "96f6fc25-80d7-4750-a27d-6c60f6387ecc",
+      "public_id": "main.NewFighter[types.go]",
+      "fingerprint": "",
+      "logic_hash": "9eb823e1dfbcb37e69131df9ff04198301757eb69181226fb3a62e853f94b424",
+      "node_type": "function",
+      "file_path": "types.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This function serves to instantiate and properly configure new fighter entities within the system. It ensures that all essential characteristics of a fighter, such as name, class, health, and gear, are consistently set upon creation, enabling their integration into game logic or simulations.",
+      "last_modified": "2026-04-10T12:09:22.477488207Z",
+      "version": 1
+    },
+    "a8def501-894d-4661-bfd7-54e235b4cb8e": {
+      "uuid": "a8def501-894d-4661-bfd7-54e235b4cb8e",
+      "public_id": "main.UseHealingPotion[healing.go]",
+      "fingerprint": "",
+      "logic_hash": "922cb7576b0e893522e9741085e5375221c8f46b68880caec8219020a2920c79",
+      "node_type": "function",
+      "file_path": "healing.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This function simulates the in-game action of a fighter consuming a healing potion, applying a fixed amount of healing to their health. It provides a core game mechanic for health restoration and generates appropriate user-facing messages based on the healing outcome.",
+      "last_modified": "2026-04-10T12:09:22.475446722Z",
+      "version": 1
+    },
+    "a9931839-9487-4e2a-95d8-65dbee56857e": {
+      "uuid": "a9931839-9487-4e2a-95d8-65dbee56857e",
+      "public_id": "main.TickStatusEffects[effects.go]",
+      "fingerprint": "",
+      "logic_hash": "1495ed1b8b4bd8243e35db04b5ddf0afd9084730ae41262bf6e3985ce1d54473",
+      "node_type": "function",
+      "file_path": "effects.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This function processes a character's active status effects at the end of a game turn, applying periodic effects like damage or healing. It also decrements the duration of all statuses, automatically removing those that have expired.",
+      "last_modified": "2026-04-10T12:09:22.475247295Z",
+      "version": 1
+    },
+    "b1d3a99e-f953-4b10-819f-eae338ff621a": {
+      "uuid": "b1d3a99e-f953-4b10-819f-eae338ff621a",
+      "public_id": "main.TestStunnedTargetCannotAct[main_test.go]",
+      "fingerprint": "",
+      "logic_hash": "e50a3015a6e40536218f5e4bb8c83c7a1f410cb2bcde3e10f2f4a6960a6dfcb5",
+      "node_type": "function",
+      "file_path": "main_test.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This test function verifies a critical game mechanic, ensuring that characters afflicted with a \"stunned\" status effect are correctly prevented from taking actions. It validates the integrity of the game's status effect system, which is crucial for fair gameplay and predictable combat logic.",
+      "last_modified": "2026-04-10T12:09:22.475933999Z",
+      "version": 1
+    },
+    "b42bd590-1bc1-4b74-8db2-9920af60012e": {
+      "uuid": "b42bd590-1bc1-4b74-8db2-9920af60012e",
+      "public_id": "main.TurnResult[moves.go]",
+      "fingerprint": "",
+      "logic_hash": "c065da6ae558edb9da591bf8f1e6838eafd7e260b82233d59f514ec2e1d7a9f4",
+      "node_type": "struct",
+      "file_path": "moves.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This structure standardizes the complete outcome of a single actor's action or a turn within a simulation or game, bundling all relevant details like actor, target, move, damage, and any resulting messages. It provides a clear, machine-readable record of events, enabling consistent system state updates, user interface feedback, and logging for analysis or playback of system interactions.",
+      "last_modified": "2026-04-10T12:09:22.476080153Z",
+      "version": 1
+    },
+    "bdf64dbe-b71c-4b42-b4ab-5504325c8463": {
+      "uuid": "bdf64dbe-b71c-4b42-b4ab-5504325c8463",
+      "public_id": "main.CanAct[rules.go]",
+      "fingerprint": "",
+      "logic_hash": "825a36e573b00b22ab6ee499ff0ab7cc9ac8f3cf8ddb232b024fa4fc1d75ca07",
+      "node_type": "function",
+      "file_path": "rules.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This function exists to determine if a combatant is currently able to perform an action within the game system. It provides value by ensuring only active, unhindered fighters participate in combat turns, upholding game rules and maintaining state integrity.",
+      "last_modified": "2026-04-10T12:09:22.476909161Z",
+      "version": 1
+    },
+    "c50b15f2-b53d-4c67-a3f1-37bc5ae103e4": {
+      "uuid": "c50b15f2-b53d-4c67-a3f1-37bc5ae103e4",
+      "public_id": "main.Fireball[moves.go]",
+      "fingerprint": "",
+      "logic_hash": "ab30e3c310686a14652454c558c1c7b56709ffd0a9f4e56333d08d75cc1cad6c",
+      "node_type": "struct",
+      "file_path": "moves.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This code defines a specific combat action, \"Fireball,\" along with other moves, giving it unique attributes like power, element, damage type, and an associated effect. It provides a foundational, reusable definition for a distinct offensive capability within the game's combat system, allowing characters to perform specific magical fire attacks with a burning effect.",
+      "last_modified": "2026-04-10T12:09:22.4765086Z",
+      "version": 1
+    },
+    "c9b19c1b-de37-4c3f-b9e4-81b131e9e5b7": {
+      "uuid": "c9b19c1b-de37-4c3f-b9e4-81b131e9e5b7",
+      "public_id": "main.TestHealingPotionRestoresHealth[main_test.go]",
+      "fingerprint": "",
+      "logic_hash": "f4e331b1b721eb6c921c2140c5b003687867a69986d3ed5e43b65a76b6c8d951",
+      "node_type": "function",
+      "file_path": "main_test.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This test function ensures that the \"Healing Potion\" game item correctly increases a character's health. It validates a critical gameplay mechanic, guaranteeing that health restoration items function reliably within the game system.",
+      "last_modified": "2026-04-10T12:09:22.475851429Z",
+      "version": 1
+    },
+    "cdd7eceb-8350-43a7-a967-99f3d59dd6f5": {
+      "uuid": "cdd7eceb-8350-43a7-a967-99f3d59dd6f5",
+      "public_id": "main.clamp[util.go]",
+      "fingerprint": "",
+      "logic_hash": "bf245f8e2c1962ee44dff4bca6671d0a838daa070fef910ff5335c7962ee6005",
+      "node_type": "function",
+      "file_path": "util.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This function exists to constrain an integer value within specified minimum and maximum bounds, preventing it from exceeding acceptable limits. It ensures data integrity and prevents out-of-range errors in system operations by normalizing input or calculated values to a valid range.",
+      "last_modified": "2026-04-10T12:09:22.477544359Z",
+      "version": 1
+    },
+    "d3e03079-9540-4083-bea2-4b3f8bb06580": {
+      "uuid": "d3e03079-9540-4083-bea2-4b3f8bb06580",
+      "public_id": "main.itoa[util.go]",
+      "fingerprint": "",
+      "logic_hash": "365b170a010d20b653b88ef9feb469ec4cccec32932b0f8296283b8f96fb9f93",
+      "node_type": "function",
+      "file_path": "util.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This function provides a standardized and centralized utility for converting integer values into their string representation within the Code Crawler system. It ensures consistency across the codebase for this common operation and offers a single point of modification should the underlying conversion logic ever need to change.",
+      "last_modified": "2026-04-10T12:09:22.477573159Z",
+      "version": 1
+    },
+    "d5418078-65cb-4f37-93a8-51755f79511c": {
+      "uuid": "d5418078-65cb-4f37-93a8-51755f79511c",
+      "public_id": "main.Move[moves.go]",
+      "fingerprint": "",
+      "logic_hash": "82e9570d88839c11ad3bcb9842b06deed4296fe723e0bcf7ed79d29b6d39e1a1",
+      "node_type": "struct",
+      "file_path": "moves.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This struct defines the core properties and capabilities of an individual combat action or ability within the system, detailing its name, power, type, and any special effects. It provides a foundational data model for consistently representing and applying diverse moves in gameplay or simulation, enabling robust and predictable combat mechanics.",
+      "last_modified": "2026-04-10T12:09:22.476005284Z",
+      "version": 1
+    },
+    "d89f0bba-0f49-4ccb-9090-33f981c0f113": {
+      "uuid": "d89f0bba-0f49-4ccb-9090-33f981c0f113",
+      "public_id": "main.ResolveTurn[turn.go]",
+      "fingerprint": "",
+      "logic_hash": "da4ce50184200855fc6c95fd2165478e24394cd4c14bfb683dcf9142f6e989da",
+      "node_type": "function",
+      "file_path": "turn.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This function orchestrates a single combat turn between two fighters, applying the chosen move's effects, calculating damage, and managing status changes. It provides a structured outcome of the turn, enabling the game system to progress combat and track the state of participants.",
+      "last_modified": "2026-04-10T12:09:22.477186524Z",
+      "version": 1
+    },
+    "eb53676c-5a68-4a5f-b473-170d7719913c": {
+      "uuid": "eb53676c-5a68-4a5f-b473-170d7719913c",
+      "public_id": "main.applyWeaponStyleBonus[damage.go]",
+      "fingerprint": "",
+      "logic_hash": "634ee69ce069ba786c475296f8e437bd63963f1e6fd634c2ee859570a3fa2adb",
+      "node_type": "function",
+      "file_path": "damage.go",
+      "dependencies": {
+        "calls": null,
+        "reads": null,
+        "writes": null
+      },
+      "test_health": {
+        "has_test": false,
+        "last_passed": false,
+        "tested_at": ""
+      },
+      "business_purpose": "This function exists to modify the base damage value by applying a specific bonus determined by the attacking fighter's weapon type. It provides value by implementing a core game mechanic that diversifies combat, making weapon choices strategically significant and enhancing the depth of damage calculations.",
+      "last_modified": "2026-04-10T12:09:22.474718146Z",
+      "version": 1
+    }
+  }
 }
